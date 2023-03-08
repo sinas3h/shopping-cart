@@ -1,0 +1,7 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin : 7rem 8rem;
+    z-index: 1;
+}

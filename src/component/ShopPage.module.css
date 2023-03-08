@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    margin: 7rem 8rem;
+    display: flex;
+    justify-content: space-between;
+}

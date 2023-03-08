@@ -1,0 +1,14 @@
+.container {
+    width: 375px;
+    height: 200px;
+    background-color: white;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 20px;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    color: #3D348B;
+    border-radius: 15px;
+}
