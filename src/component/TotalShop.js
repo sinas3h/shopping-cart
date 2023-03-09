@@ -7,10 +7,10 @@ const TotalShop = (props) => {
     return (
         <div className={style.container}>
             <h2>Total Items : {counterSelect}</h2>
-            <h2>Total Payments : {total}</h2>
+            <h2>Total Payments : {total} $</h2>
             <div>
-                <button>Clear</button>
-                <button>Check Out</button>
+                <button className={style.btn}>Clear</button>
+                <button className={style.btn}>Check Out</button>
             </div>
         </div>
     );

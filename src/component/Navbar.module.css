@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    background-color: #31297ee1;
+    background-color: var(--color-secondary);
     color: white;
     position: fixed;
     top: 0;
@@ -8,7 +8,6 @@
     font-size: 22px;
     /* box-shadow: #006d7776 0px 13px 27px -5px, #006d7775 0px 8px 16px -8px;
     box-shadow: #006d7776 0px 4px 6px -1px, #006d7775 0px 2px 4px -1px; */
-    box-shadow: #403693 0px 18px 50px -10px;
     display: flex;
     justify-content: space-between;
     align-items: center;

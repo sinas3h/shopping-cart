@@ -13,7 +13,7 @@ import style from './ShopPage.module.css'
 
 const ShopPage = () => {
 
-const {state , dispatch} = useContext(cartContext)
+const {state} = useContext(cartContext)
 
     return (
         <div className={style.content}>

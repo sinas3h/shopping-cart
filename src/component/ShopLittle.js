@@ -12,10 +12,10 @@ const ShopLittle = (props) => {
     const { image , title , quantity , price } = props.data
     return (
         <div className={style.container}>
-            <div className={style.image}><img src={image} /></div>
+            <div className={style.image}><img src={image} alt='img' /></div>
             <div>
                 <h2>{shorten(title)}</h2>
-                <p>{price}</p>
+                <p>{price} $</p>
             </div>
             <p>{quantity}</p>
 

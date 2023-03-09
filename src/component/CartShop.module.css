@@ -9,7 +9,7 @@
     align-items: center;
     padding: 10px 0;
     margin: 1.7rem .7rem;
-    background-color: white;
+    background-color: var(--color-white);
     transition: .3s;
     font-size: 20px;
 
@@ -18,7 +18,7 @@
 .cart:hover {
     /* box-shadow: #006D77; */
     /* box-shadow:#006d77 0px 20px 75px -20px, #006d77 0px 25px 60px -25px; */
-    box-shadow: #6c66a2 0px 10px 20px, #6c66a2 0px 6px 6px;
+    box-shadow: var(--color-secondary) 0px 10px 20px, var(--color-secondary)  0px 6px 6px;
     scale: 1.1;
 }
 
@@ -33,7 +33,7 @@
 
 .addItem {
     border: 0;
-    background-color: #3D348B;
+    background-color: var(--color-secondary);
     color : white ;
     width: 220px;
     height: 35px;
@@ -46,16 +46,16 @@
 }
 
 .addItem:hover {
-    background-color: #F7B801;
-    color: #0f0f0f;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
     /* transition: .5s; */
 }
 
 .price {
-    color: #3D348B;
+    color: var(--color-secondary);
     text-align: center;
     width: 220px;
-    background-color: #d7d5eb;
+    background-color: var(--color-primary);
     padding: 10px 0;
     font-size: 16px;
 }
@@ -67,7 +67,7 @@
     border-radius: 8px;
     border: 0;
     color : white ;
-    background-color: #3D348B;
+    background-color: var(--color-secondary);
     transition: .2s;
     cursor: pointer;
     font-size: 16px;
@@ -78,8 +78,8 @@
 }
 
 .btn:hover {
-    background-color: #F7B801;
-    color: #0f0f0f;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .remove {
