@@ -15,7 +15,7 @@ const ShopLittle = (props) => {
             <div className={style.image}><img src={image} alt='img' /></div>
             <div>
                 <h2>{shorten(title)}</h2>
-                <p>{price} $</p>
+                <p>${price}</p>
             </div>
             <p>{quantity}</p>
 

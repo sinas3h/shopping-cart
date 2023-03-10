@@ -11,9 +11,16 @@ const MainPage = () => {
     const products = useContext(ProductContext)
 
     return (
+        <div className={style.mainWrapper}>
+
+        <div className={style.mainDiv}>
+            <h2 className={style.header}>Shop</h2>
+        </div>
 
         <div className={style.main}>
             {products.map(product => <CartShop key={product.id} productData={product} />)}
+        </div>
+
         </div>
 
     )

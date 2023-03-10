@@ -21,7 +21,7 @@ const CartShop = ({productData}) => {
         <div className={style.cart}>
             <div className={style.image}><img src={productData.image} alt='cart'/></div>
             <h2>{shorten(productData.title)}</h2>
-            <p className={style.price}>{productData.price} $</p>
+            <p className={style.price}>${productData.price}</p>
             <div className={style.items}>
                 {/* <p>{productData.price} $</p> */}
                     

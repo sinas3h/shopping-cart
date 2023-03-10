@@ -1,24 +1,32 @@
 .container {
     width: 100%;
-    background-color: var(--color-secondary);
-    color: white;
+    /* background-color: var(--color-secondary); */
     position: fixed;
     top: 0;
     height: 70px;
-    font-size: 22px;
+    font-size: 18px;
     /* box-shadow: #006d7776 0px 13px 27px -5px, #006d7775 0px 8px 16px -8px;
     box-shadow: #006d7776 0px 4px 6px -1px, #006d7775 0px 2px 4px -1px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    backdrop-filter: blur(25px);
+    /* backdrop-filter: blur(25px); */
     z-index: 2;
+    font-weight: 600;
+    background-color: var(--color-primary-lighter);
 }
 
-.container div {
-    margin: 0 9rem;
+.container h2 {
+    font-size: 24px;
+}
+
+.navCenter {
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
 }
 
 .link {
-    color: white;
+    color: var(--color-gray);
+    text-decoration: none;
 }

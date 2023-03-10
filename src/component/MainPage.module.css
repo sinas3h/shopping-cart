@@ -1,7 +1,38 @@
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    position: relative;
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin : 7rem 8rem;
+    margin : 8rem 8rem;
     z-index: 1;
+    position: relative;
+}
+
+.mainDiv {
+    display: flex;
+    position: absolute;
+    background:radial-gradient(circle at 50% 0%, #F35B04 0%, #F7B801 7%, #F18701 48%, #F7B801 75%);
+    width: 90%;
+    height: 25rem;
+    z-index: -1;
+    border-radius: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0
+}
+
+.header {
+    color: var(--color-socondary);
+    /* font-weight: bold; */
+    font-size: 44px;
+    margin: 4rem auto;
+    font-weight: 800;
 }

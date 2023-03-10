@@ -1,4 +1,7 @@
 body {
   background-color: var(--color-gray);
-  font-family: sans-serif;
+  font-family: 'Baloo 2', cursive;
+  min-height: 100vh;
+  background-color: var(--color-primary-lighter);
 }
+
