@@ -8,12 +8,14 @@
     border-radius: 15px;
     justify-content: space-between;
     align-items: center;
-    transition: .3s;
+    transition: .1s;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    outline: 0;
 }
 
 .container:hover {
-    scale: 1.05;
+    outline: 3px solid var(--color-secondary);
+    transition: .1s;
 }
 
 .image img {

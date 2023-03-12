@@ -16,8 +16,16 @@
     background-color: var(--color-primary-lighter);
 }
 
+.link:hover ,  .container h2:hover {
+    color: var(--color-secondary);
+    transition: .2s;
+
+}
+
 .container h2 {
-    font-size: 24px;
+    font-size: 28px;
+    transition: .3s;
+
 }
 
 .navCenter {
@@ -29,4 +37,5 @@
 .link {
     color: var(--color-gray);
     text-decoration: none;
+
 }

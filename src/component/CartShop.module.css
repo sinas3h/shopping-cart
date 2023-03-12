@@ -2,7 +2,7 @@
     width: 250px;
     height: 300px;
     border: 0;
-    border-radius: 15px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -10,16 +10,16 @@
     padding: 10px 0;
     margin: 1.7rem .7rem;
     background-color: var(--color-white);
-    transition: .3s;
+    transition: .1s;
     font-size: 20px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: 0 25px 50px #2b190055;
 
 }
 
 .cart:hover {
-    /* box-shadow: #006D77; */
-    /* box-shadow:#006d77 0px 20px 75px -20px, #006d77 0px 25px 60px -25px; */
-    scale: 1.1;
+    outline: 3px solid var(--color-secondary);
+    transition: .1s;
+
 }
 
 .cart h2 {
@@ -29,6 +29,7 @@
 
 .image {
     margin: 5px;
+    
 }
 
 .image img {
@@ -42,7 +43,7 @@
     color : white ;
     width: 220px;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 14px;
     transition: .2s;
     cursor: pointer;
     font-family: 'Baloo 2', cursive;
@@ -60,10 +61,11 @@
     color: var(--color-secondary);
     text-align: center;
     width: 220px;
-    border-radius: 10px;
+    border-radius: 14px;
     background-color: var(--color-primary-light);
     padding: 10px 0;
     font-size: 16px;
+    
 }
 
 .btn {

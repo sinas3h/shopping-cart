@@ -43,11 +43,11 @@ table {
 }
 
 :root {
-	--color-primary : #F18701;
-	--color-primary-light : #F7B801;
-	--color-primary-lighter : #FFEBC2;
+	--color-primary : #FED74C;
+	--color-primary-light : #FED74C;
+	--color-primary-lighter : #ececec;
 	--color-primary-dark : #F35B04;
-	--color-secondary : #3D348B;
+	--color-secondary : #0155b6;
 	--color-gray : #1f1f1f;
 	--color-white : #ffffff;
 
