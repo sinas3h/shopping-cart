@@ -35,8 +35,7 @@ const reducer = (state , action) => {
             return {
                 ...state,
                 selectItem : [...newRemove] ,
-                ...sumItem(state.selectItem)
-                
+                ...sumItem(newRemove)
             }
 
         case 'INCREASE' :

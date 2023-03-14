@@ -12,16 +12,20 @@ const Navbar = () => {
     return (
         <div className={style.container}>
 
-            <h2>Shophub</h2>
+            <h2>Online Shopping</h2>
             <div className={style.navCenter}>
                 <Link className={style.link} >Home</Link>
                 <Link className={style.link} to='/products'>products</Link>
                 <Link className={style.link} >Blog</Link>
                 <Link className={style.link} >Contact</Link>
             </div>
-            <div>
-                <Link className={style.link} to='/shoping'>Shop</Link>
-                <span>{state.counterSelect}</span>
+            <div className={style.shoppingBag}>
+                <Link  to='/shopping'>
+                    <span className="material-symbols-outlined">
+                    shopping_bag
+                    </span>
+                    <span>{state.counterSelect}</span>
+                </Link>
             </div>
             <Outlet />
         </div>

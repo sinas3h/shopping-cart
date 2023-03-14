@@ -1,24 +1,17 @@
 .cart {
     width: 250px;
-    height: 300px;
+    height: 330px;
     border: 0;
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
     padding: 10px 0;
     margin: 1.7rem .7rem;
-    background-color: var(--color-white);
-    transition: .1s;
+    background-color: white;
+    transition: .2s;
     font-size: 20px;
-    box-shadow: 0 25px 50px #2b190055;
-
-}
-
-.cart:hover {
-    outline: 3px solid var(--color-secondary);
-    transition: .1s;
+    box-sizing: border-box;
 
 }
 
@@ -43,55 +36,63 @@
     color : white ;
     width: 220px;
     height: 35px;
-    border-radius: 14px;
     transition: .2s;
     cursor: pointer;
     font-family: 'Baloo 2', cursive;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .addItem:hover {
-    background-color: var(--color-primary-light);
-    color: var(--color-secondary);
-    /* transition: .5s; */
+    background-color: var(--color-secondary-light);
 }
 
 .price {
     color: var(--color-secondary);
     text-align: center;
     width: 220px;
-    border-radius: 14px;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-gray-light);
     padding: 10px 0;
     font-size: 16px;
     
 }
 
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn {
-    width:30px;
-    height:25px;
-    margin: 0 5px;
-    border-radius: 8px;
+    display: flex;
     border: 0;
+    padding: 5px 10px;
     color : white ;
     background-color: var(--color-secondary);
     transition: .2s;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 25px;
     text-align: center;
 	font-family: 'Baloo 2', cursive;
+}
 
-    
+.btn span {
+    font-weight: 600;
 }
 
 .btn:hover {
-    background-color: var(--color-primary-light);
-    color: var(--color-secondary);
+    background-color: var(--color-secondary-light);
 }
 
-.remove {
-    font-size: 16px !important;
+.quantityCount {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 68;
 }

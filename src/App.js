@@ -7,8 +7,7 @@ import CartContextProvider from './contex/CartContextProvider';
 import MainPage from './component/MainPage';
 import Navbar from './component/Navbar';
 import ShopPage from './component/ShopPage';
-// css
-import style from './App.module.css'
+
 
 const App = () => {
 
@@ -18,7 +17,7 @@ const App = () => {
       <CartContextProvider>
       <Navbar />
         <Routes>
-          <Route path='/shoping' element={<ShopPage />} />
+          <Route path='/shopping' element={<ShopPage />} />
           <Route path='/products' element={<MainPage />} />
           <Route path='/*' element={<Navigate to='./products' />} />
         </Routes>

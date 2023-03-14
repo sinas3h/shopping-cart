@@ -1,11 +1,26 @@
+.contentWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    margin: 7rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.content {
-    margin: 7rem 8rem;
-    display: flex;
-    justify-content: space-between;
+.empty {
+    margin: 5rem auto;
+    padding: 1rem 2rem;
+    font-size: 24px;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    transition: .2s;
 }

@@ -13,11 +13,14 @@ const ShopLittle = (props) => {
     return (
         <div className={style.container}>
             <div className={style.image}><img src={image} alt='img' /></div>
-            <div>
-                <h2>{shorten(title)}</h2>
-                <p>${price}</p>
+            <div className={style.containerDetails}>
+                <div>
+                    <h2>{shorten(title)}</h2>
+                    <p>${price}</p>
+                </div>
+                <p>{quantity}</p>
             </div>
-            <p>{quantity}</p>
+            
 
             <div>
             {
@@ -25,7 +28,7 @@ const ShopLittle = (props) => {
                 <button className={style.btn} onClick={() => dispatch({type : 'REMOVE_ITEM' , payload : props.data})} ><i className={style.remove} className="fa fa-trash"></i></button> :
                 <button className={style.btn} onClick={() => dispatch({type : 'DECREASE' , payload : props.data})} ><i className="fa fa-angle-down"></i></button>
                 }
-                <button className={style.btn2} onClick={() => dispatch({type : 'INCREASE' , payload : props.data})} ><i className="fa fa-angle-up"></i></button>
+                <button className={style.btn} onClick={() => dispatch({type : 'INCREASE' , payload : props.data})} ><i className="fa fa-angle-up"></i></button>
             </div>
 
         </div>

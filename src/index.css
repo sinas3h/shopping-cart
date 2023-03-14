@@ -44,12 +44,19 @@ table {
 
 :root {
 	--color-primary : #FED74C;
-	--color-primary-light : #FED74C;
-	--color-primary-lighter : #ececec;
-	--color-primary-dark : #F35B04;
+	--color-primary-light : #fee692;
 	--color-secondary : #0155b6;
+	--color-secondary-light : #016DE9;
+	--color-gray-light : #ececec;
 	--color-gray : #1f1f1f;
 	--color-white : #ffffff;
 
 }
+
+body {
+	background-color: var(--color-gray);
+	font-family: 'Baloo 2', cursive;
+	min-height: 110vh;
+	background-color: var(--color-gray-light);
+  }
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     position: relative;
 }
 
@@ -40,15 +40,16 @@
 .mainDiv {
     
     position: absolute;
-    background-color: var(--color-primary);
+    background:radial-gradient(circle at 50% 0%, #FFCB11 3%, #FED74C 20%, #FFCA0C 48%, #FED74C 75%);
     width: 90%;
     height: 25rem;
     z-index: -1;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 0
+    top: 0;
+    color: var(--color-white);
 }
 
 .mainDiv div {
@@ -57,10 +58,32 @@
     margin: 4rem 6rem 0;
 }
 
+.mainBlockDetail h3 {
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    /* border-radius: 15px; */
+}
+
+.mainBlockDetail span {
+    color: var(--color-primary);
+}
+
 .header {
-    color: var(--color-socondary);
-    /* font-weight: bold; */
+    color: var(--color-gray);
     font-size: 44px;
-    /* margin: 4rem auto; */
     font-weight: 800;
+}
+
+.blobYellow svg {
+    position: absolute;
+    top:60rem;
+    left: 9%;
+    width: 55rem;
+}
+
+.blobBlue {
+    position: absolute;
+    top:45rem;
+    right: 10%;
+    width: 30rem;
 }
