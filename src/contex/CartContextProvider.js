@@ -5,7 +5,8 @@ const initialState = {
     selectItem : [] ,
     counterSelect : 0 ,
     total : 0 ,
-    checkout : false
+    checkout : false,
+    favorite: []
 }
 
 const sumItem = items => {
@@ -68,6 +69,23 @@ const reducer = (state , action) => {
                 counterSelect : 0 ,
                 total : 0 ,
                 checkout : false
+            }
+
+        case 'FAVORITE' :
+            if(!state.favorite.find(item => item.id === action.payload.id)){
+                state.favorite.push({
+                    ...action.payload
+                })
+            }
+            return {
+                ...state,
+                favorite : [...state.favorite]
+            }
+        case 'UNFAVORITE' :
+            const newFavorite = state.favorite.filter(item => item.id !== action.payload.id)
+            return {
+                ...state ,
+                favorite : [...newFavorite]
             }
 
 

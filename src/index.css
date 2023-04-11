@@ -47,16 +47,18 @@ table {
 	--color-primary-light : #fee692;
 	--color-secondary : #0155b6;
 	--color-secondary-light : #016DE9;
-	--color-gray-light : #ececec;
-	--color-gray : #1f1f1f;
+	--color-gray-light : #F2F2F2;
+	--color-gray-dark : #1f1f1f;
+	--color-gray : #6d6d6d;
 	--color-white : #ffffff;
 
 }
 
 body {
-	background-color: var(--color-gray);
-	font-family: 'Baloo 2', cursive;
-	min-height: 110vh;
 	background-color: var(--color-gray-light);
+	font-family: 'Noto Sans Oriya', sans-serif;
+	min-height: 110vh;
+	max-width: 2000px;
+	margin: 0 auto;
   }
 

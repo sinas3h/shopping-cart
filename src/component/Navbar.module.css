@@ -1,5 +1,5 @@
 .container {
-    color: var(--color-gray);
+    color: var(--color-gray-dark);
     top: 0;
     height: 70px;
     font-size: 18px;
@@ -9,7 +9,6 @@
     transition: .2s;
     z-index: 2;
     font-weight: 500;
-    background-color: var(--color-primary-lighter);
     padding: 1rem 0 0;
 }
 
@@ -25,21 +24,21 @@
     display: flex;
     width: 30rem;
     justify-content: space-between;
-    background-color: var(--color-primary);
     /* padding: .5rem 1rem; */
 }
 
 .link {
-    color: var(--color-gray);
+    color: var(--color-gray-dark);
     text-decoration: none;
     transition: .2s;
-    padding: 1rem 1.5rem;
+    padding: .6rem 1rem;
+    border-radius: 20px;
 }
 
 .link:hover {
     /* color: var(--color-primary); */
     transition: .2s;
-    background-color: var(--color-primary-light);
+    color: var(--color-secondary);
     /* border-radius: 15px; */
 }
 
@@ -53,16 +52,17 @@
 }
 
 .shoppingBag :nth-child(1) {
-    color: var(--color-gray);
     text-decoration: none;
     transition: .2s;
-    font-size: 36px;
+    width: 30px;
 }
 
 .shoppingBag :nth-child(2) {
     position: absolute;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--color-secondary);
+    border-radius: 100%;
+    text-align: center;
 }
 
 .material-symbols-outlined {

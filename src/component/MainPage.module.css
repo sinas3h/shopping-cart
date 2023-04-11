@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin : 8rem 8rem;
+    margin : 4rem 5rem;
     z-index: 1;
     position: relative;
     height: auto;
@@ -38,30 +38,31 @@
 }
 
 .mainDiv {
-    
-    position: absolute;
-    background:radial-gradient(circle at 50% 0%, #FFCB11 3%, #FED74C 20%, #FFCA0C 48%, #FED74C 75%);
     width: 90%;
-    height: 25rem;
-    z-index: -1;
+    /* height: 25rem; */
     /* border-radius: 50px; */
     margin: 0 auto;
     left: 0;
     right: 0;
     top: 0;
-    color: var(--color-white);
+    color: var(--color-gray);
 }
 
 .mainDiv div {
     display: flex;
     justify-content: space-between;
-    margin: 4rem 6rem 0;
+    margin: 1rem 6rem 0;
 }
 
-.mainBlockDetail h3 {
-    padding: 1rem;
-    background-color: var(--color-secondary);
-    /* border-radius: 15px; */
+.mainBlockDetail button {
+    padding: .5rem 1rem;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid var(--color-primary);
+    color: var(--color-gray);
+    font-family: inherit;
+    font-size: 15px;
 }
 
 .mainBlockDetail span {

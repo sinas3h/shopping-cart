@@ -15,7 +15,7 @@ const quantityCount = (state , id) => {
     
 }
 
-const inInCart = (state , id) => {
+const isInCart = (state , id) => {
     const indexI = state.selectItem.findIndex(item => item.id === id)
     if(indexI === -1){
         return true
@@ -26,4 +26,4 @@ const inInCart = (state , id) => {
 }
 
 
-export {shorten , quantityCount , inInCart}
+export {shorten , quantityCount , isInCart}

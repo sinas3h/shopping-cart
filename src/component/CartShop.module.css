@@ -1,92 +1,121 @@
 .cart {
-    width: 250px;
-    height: 330px;
+    /* width: fit-content; */
+    height: 370px;
     border: 0;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
-    padding: 10px 0;
-    margin: 1.7rem .7rem;
-    background-color: white;
+    padding: 0px 0;
+    margin: 1.7rem 1rem;
     transition: .2s;
     font-size: 20px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    border-radius: 20px;
+    position: relative;
+}
 
+.cartTitel {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .3rem 0 ;
 }
 
 .cart h2 {
-    color: var(--color-secondary);
-    font-weight: 600;
+    color: var(--color-gray-dark);
+    font-weight: 500;
+    width: 90%;
+    text-align: left;
+    font-size: 17px;
 }
 
-.image {
-    margin: 5px;
-    
+.cartFavorite{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 .image img {
-    width: 170px;
+    width: 150px;
     height: 150px;
-}
-
-.addItem {
-    border: 0;
-    background-color: var(--color-secondary);
-    color : white ;
-    width: 220px;
-    height: 35px;
-    transition: .2s;
-    cursor: pointer;
-    font-family: 'Baloo 2', cursive;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.addItem:hover {
-    background-color: var(--color-secondary-light);
-}
-
-.price {
-    color: var(--color-secondary);
-    text-align: center;
-    width: 220px;
-    background-color: var(--color-gray-light);
-    padding: 10px 0;
-    font-size: 16px;
-    
+    padding: 4rem;
+    /* box-sizing: border-box; */
+    border: 3px solid var(--color-gray-light);
+    border-bottom: 0;
+    border-radius: 30px ;
+    background-color: var(--color-white);
+    align-content: center;
 }
 
 .items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin-bottom: .5rem;
+    height: 2rem;
+}
+
+.cartButtons{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s;
+}
+
+.addItem {
+    border: 0;
+    background-color: var(--color-secondary-light);
+    color : var(--color-white) ;
+    border: 2px solid var(--color-secondary-light);
+    border-radius: 20px;
+    padding: .3rem .8rem;
+    transition: .2s;
+    cursor: pointer;
+    font-family: 'Noto Sans Oriya', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.addItem:hover {
+    color: var(--color-white);
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+}
+
+.price {
+    color: var(--color-gray-dark);
+    text-align: right;
+    width: 90%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cartDetails{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-gray);
 }
 
 .btn {
     display: flex;
     border: 0;
-    padding: 5px 10px;
     color : white ;
-    background-color: var(--color-secondary);
     transition: .2s;
     cursor: pointer;
     text-align: center;
 	font-family: 'Baloo 2', cursive;
 }
 
-.btn span {
-    font-weight: 600;
-}
-
-.btn:hover {
-    background-color: var(--color-secondary-light);
-}
-
 .quantityCount {
     display: inline-block;
     width: 30px;
     text-align: center;
+    color: var(--color-secondary);
 }
 
 .material-symbols-outlined {
