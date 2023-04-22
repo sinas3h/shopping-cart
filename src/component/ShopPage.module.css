@@ -23,4 +23,5 @@
     background-color: var(--color-secondary);
     color: var(--color-white);
     transition: .2s;
+    border-radius: 20px;
 }

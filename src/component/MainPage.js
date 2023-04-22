@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 // context
 import { ProductContext } from "../contex/ProductsContextProvider";
 // component
@@ -7,36 +7,44 @@ import CartShop from "./CartShop";
 import style from "./MainPage.module.css";
 
 const MainPage = () => {
+
+  
   const products = useContext(ProductContext);
+
+  const [filterProducts , setFilterProducts] = useState(products)
+
+  const mensHandler = () => {
+    const electronics = products.filter(products => products.category= "men's clothing")
+    setFilterProducts(electronics)
+  }
+ 
+
 
   return (
     <div className={style.mainWrapper}>
 
-      <div className={style.mainDiv}>
-        <div className={style.mainBlockDetail}>
-          <button>
-            Home / <span>Products</span>
-          </button>
-          <h2 className={style.header}>Shop</h2>
-          <button>default sorting</button>
+      <div className={style.topMainDiv}>
+        <div className={style.topMainBlockDetail}>
+          <p>shop with us!</p>
+          <h2 className={style.header}>SPECIAL SALE</h2>
         </div>
       </div>
 
-      <div className={style.mainDiv}>
         <div className={style.mainBlockDetail}>
-          <button>
-            Home / <span>Products</span>
-          </button>
+         <div className={style.category}>
+          <button>All Products</button>
+          <button>Favorite</button>
+          <button onClick={mensHandler}>men's clothing</button>
+         </div>
           <button>default sorting</button>
         </div>
-      </div>
 
       <div className={style.main}>
         {!products.length ? (
             <span className={style.loading}></span>
         ) : (
           products.map((product) => (
-            <CartShop key={product.id} productData={product} />
+            <CartShop key={product.id} productData={products} />
           ))
         )}
       </div>

@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1rem;
     position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin : 4rem 5rem;
+    margin : 1rem auto;
     z-index: 1;
     position: relative;
     height: auto;
@@ -20,8 +21,8 @@
     width: 5rem;
     height: 5rem;
     display: block;
-    border: 3px solid var(--color-beige-lighter);
-    border-bottom-color: var(--color-gray);
+    border: 3px solid var(--color-secondary-light);
+    border-bottom-color: var(--color-gray-dark);
     border-radius: 50%;
     box-sizing: border-box;
     animation: loading 1s linear infinite;
@@ -37,21 +38,38 @@
     }
 }
 
-.mainDiv {
-    width: 90%;
-    /* height: 25rem; */
-    /* border-radius: 50px; */
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    color: var(--color-gray);
+.topMainDiv{
+    width: 100%;
+    max-width: 1300px;
+    height: 200px;
+    margin: 1rem auto 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary-light);
+    border-radius: 20px;
 }
 
-.mainDiv div {
+.topMainBlockDetail P{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: var(--color-gray-dark);
+    font-weight: 600;
+
+}
+
+.topMainBlockDetail h2 {
+    color: var(--color-white);
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
+.mainBlockDetail{
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin: 1rem 6rem 0;
+    width: 90%;
 }
 
 .mainBlockDetail button {
@@ -59,32 +77,27 @@
     text-align: center;
     align-items: center;
     border-radius: 20px;
-    border: 2px solid var(--color-primary);
-    color: var(--color-gray);
+    border: 0 ;
+    background-color: var(--color-white);
+    color: var(--color-gray-dark);
     font-family: inherit;
+    font-weight: 500;
     font-size: 15px;
+    cursor: pointer;
+    transition: .2s;
 }
 
-.mainBlockDetail span {
-    color: var(--color-primary);
-}
-
-.header {
+.mainBlockDetail button:hover {
     color: var(--color-gray);
-    font-size: 44px;
-    font-weight: 800;
 }
 
-.blobYellow svg {
-    position: absolute;
-    top:60rem;
-    left: 9%;
-    width: 55rem;
+.mainBlockDetail button:focus {
+    background-color: var(--color-secondary-light);
+    color: white;
 }
 
-.blobBlue {
-    position: absolute;
-    top:45rem;
-    right: 10%;
-    width: 30rem;
+.category {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
 }

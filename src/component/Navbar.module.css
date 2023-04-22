@@ -1,7 +1,6 @@
 .container {
     color: var(--color-gray-dark);
     top: 0;
-    height: 70px;
     font-size: 18px;
     display: flex;
     justify-content: space-around;
@@ -10,41 +9,53 @@
     z-index: 2;
     font-weight: 500;
     padding: 1rem 0 0;
+    width: 85%;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 
 
 .container h2 {
-    width: 50px;
-    font-size: 28px;
+    width: 20%;
+    font-size: 20px;
     font-weight: 800;
 }
 
 .navCenter {
     display: flex;
     width: 30rem;
+    padding: 0 .5rem;
     justify-content: space-between;
-    /* padding: .5rem 1rem; */
+    align-items: center;
+    height: 3rem;
+    
+}
+
+.navCenter li {
+    transition: .2s;
 }
 
 .link {
-    color: var(--color-gray-dark);
     text-decoration: none;
-    transition: .2s;
-    padding: .6rem 1rem;
+    color: var(--color-gray-dark);
+    box-sizing: border-box;
+    padding: .4rem .75rem;
     border-radius: 20px;
+    transition: .2s;
+    font-weight: 500;
 }
 
 .link:hover {
     /* color: var(--color-primary); */
     transition: .2s;
-    color: var(--color-secondary);
+    color: var(--color-gray);
+    box-sizing: border-box;
     /* border-radius: 15px; */
 }
 
 .shoppingBag {
-    width: 50px;
-    height: 50px;
+    width: 20%;
     text-align: center;
     box-sizing: border-box;
     transition: .2s;
