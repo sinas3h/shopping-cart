@@ -17,19 +17,18 @@
 
 
 .container h2 {
-    width: 20%;
     font-size: 20px;
     font-weight: 800;
 }
 
 .navCenter {
     display: flex;
-    width: 30rem;
+    width: 24rem;
     padding: 0 .5rem;
     justify-content: space-between;
     align-items: center;
     height: 3rem;
-    
+
 }
 
 .navCenter li {
@@ -43,6 +42,7 @@
     padding: .4rem .75rem;
     border-radius: 20px;
     transition: .2s;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -54,8 +54,35 @@
     /* border-radius: 15px; */
 }
 
+.searchBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    width: 20rem;
+    padding: .4rem 1rem;
+}
+
+.searchBlock span {
+    width: 20px;
+    cursor: pointer;
+}
+
+.searchInput{
+    background-color: #e2e2e2;
+	font-family: 'Noto Sans Oriya', sans-serif;
+    font-weight: 400;
+    border: 0;
+    outline: 0;
+}
+
+.searchNavbar::placeholder {
+	font-family: 'Noto Sans Oriya', sans-serif;
+    color: var(--color-gray);
+}
+
 .shoppingBag {
-    width: 20%;
     text-align: center;
     box-sizing: border-box;
     transition: .2s;
@@ -77,9 +104,9 @@
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 500,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48
 }

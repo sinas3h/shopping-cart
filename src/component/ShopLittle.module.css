@@ -38,22 +38,24 @@
 
 .price {
     font-weight: 600;
-    
+
 }
 
-.quantity{
+.quantity {
     font-weight: 500;
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-secondary);
     color: white;
-    border-radius: 100px;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.containerButtons{
+.containerButtons {
     display: flex;
     width: 5rem;
     justify-content: space-between;
@@ -62,10 +64,10 @@
 .btn {
     display: flex;
     border: 0;
-    color : white ;
+    color: white;
     transition: .2s;
     cursor: pointer;
     text-align: center;
-	font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo 2', cursive;
     background-color: rgb(255, 255, 255);
 }

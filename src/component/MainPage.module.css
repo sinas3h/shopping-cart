@@ -11,7 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin : 1rem auto;
+    margin: 1rem auto;
     z-index: 1;
     position: relative;
     height: auto;
@@ -33,13 +33,14 @@
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
-.topMainDiv{
-    width: 100%;
+.topMainDiv {
+    width: 95%;
     max-width: 1300px;
     height: 200px;
     margin: 1rem auto 2rem auto;
@@ -50,7 +51,7 @@
     border-radius: 20px;
 }
 
-.topMainBlockDetail P{
+.topMainBlockDetail P {
     font-size: 20px;
     margin-bottom: 1rem;
     color: var(--color-gray-dark);
@@ -65,26 +66,36 @@
     letter-spacing: 8px;
 }
 
-.mainBlockDetail{
+.mainBlockDetail {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
 }
 
 .mainBlockDetail button {
-    padding: .5rem 1rem;
+    padding: .5rem .75rem;
     text-align: center;
-    align-items: center;
     border-radius: 20px;
-    border: 0 ;
+    border: 0;
     background-color: var(--color-white);
     color: var(--color-gray-dark);
     font-family: inherit;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mainBlockDetail button span {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
 }
 
 .mainBlockDetail button:hover {
@@ -94,10 +105,55 @@
 .mainBlockDetail button:focus {
     background-color: var(--color-secondary-light);
     color: white;
+    border: 0;
+    outline: 0;
 }
 
 .category {
-    width: 30%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
 }
+
+.sortwrapper {
+    display: none;
+    transition: .2s;
+}
+
+.sortwrapperActive {
+    position: absolute;
+    background-color: var(--color-secondary-light);
+    color: white;
+    width: 13rem;
+    right: 0;
+    top: 2.7rem;
+    border-radius: 20px;
+    z-index: 10;
+    display: block;
+    transition: .2s;
+    overflow: hidden;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.sortwrapperActive ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sortwrapperActive ul li {
+    cursor: pointer;
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.sortwrapperActive ul li:hover {
+    background-color: var(--color-secondary);
+}
+
+.sortwrapperActive ul :not(:last-child) {
+    border-bottom: 1px solid var(--color-gray-light);
+}
+
