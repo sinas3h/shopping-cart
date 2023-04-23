@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 import { cartContext } from "../contex/CartContextProvider";
@@ -10,10 +10,18 @@ import bagIcon from "../icons/bag.svg";
 
 const Navbar = () => {
   const { state } = useContext(cartContext);
+
+  const [menu , setMenu] = useState(false)
+
   return (
     <div className={style.container}>
+      <div onClick={()=> setMenu(!menu)} className={style.menuBlock}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <h2>Online Shopping</h2>
-      <ul className={style.navCenter}>
+      <ul className={!menu ? style.navCenter : `${style.navCenter} ${style.navCenterActive}`}>
         <li>
           <Link className={style.link}>Home</Link>
         </li>
@@ -26,10 +34,10 @@ const Navbar = () => {
           <Link className={style.link}>Blog</Link>
         </li>
         <li>
-          <Link className={style.link}>Contact us</Link>
+          <Link className={style.link}>Contact</Link>
         </li>
-      </ul>
-      <div className={style.searchBlock} >
+        <li>
+        <div className={style.searchBlock} >
         <input
           className={style.searchInput}
           type="text"
@@ -53,6 +61,8 @@ const Navbar = () => {
           </svg>
         </span>
       </div>
+        </li>
+      </ul>
       <div className={style.shoppingBag}>
         <Link to="/shopping">
           <img src={bagIcon} alt="bagIcon" />

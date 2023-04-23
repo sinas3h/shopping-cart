@@ -1,17 +1,15 @@
 .container {
     color: var(--color-gray-dark);
-    top: 0;
-    font-size: 18px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     transition: .2s;
     z-index: 2;
     font-weight: 500;
-    padding: 1rem 0 0;
-    width: 85%;
-    max-width: 1300px;
+    padding: 1rem 3rem;
+    max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -22,13 +20,26 @@
 }
 
 .navCenter {
+    background-color: white;
+    width: 15rem;
+    height: 15rem;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: 9;
     display: flex;
-    width: 24rem;
-    padding: 0 .5rem;
-    justify-content: space-between;
-    align-items: center;
-    height: 3rem;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    transition: .2s;
+}
 
+.navCenterActive {
+    left: 0rem;
+    top: 0;
 }
 
 .navCenter li {
@@ -38,7 +49,6 @@
 .link {
     text-decoration: none;
     color: var(--color-gray-dark);
-    box-sizing: border-box;
     padding: .4rem .75rem;
     border-radius: 20px;
     transition: .2s;
@@ -60,8 +70,8 @@
     align-items: center;
     background-color: #e2e2e2;
     border-radius: 20px;
-    width: 20rem;
-    padding: .4rem 1rem;
+    width: 8rem;
+    padding: .1rem .5rem;
 }
 
 .searchBlock span {
@@ -69,24 +79,32 @@
     cursor: pointer;
 }
 
-.searchInput{
+.searchInput {
     background-color: #e2e2e2;
-	font-family: 'Noto Sans Oriya', sans-serif;
+    font-family: 'Noto Sans Oriya', sans-serif;
     font-weight: 400;
+    font-size: 13px;
     border: 0;
     outline: 0;
+    width: 100%;
 }
 
 .searchNavbar::placeholder {
-	font-family: 'Noto Sans Oriya', sans-serif;
+    font-family: 'Noto Sans Oriya', sans-serif;
     color: var(--color-gray);
+}
+
+@keyframes activeMenu {
+    0% {
+        left: 0;
+    }
 }
 
 .shoppingBag {
     text-align: center;
-    box-sizing: border-box;
     transition: .2s;
     border: 0;
+    margin-left: 1rem;
 }
 
 .shoppingBag :nth-child(1) {
@@ -103,10 +121,51 @@
     text-align: center;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 500,
-        'GRAD' 0,
-        'opsz' 48
+.menuBlock {
+    display: flex;
+    flex-direction: column;
+    height: 1.3rem;
+    width: 2rem;
+    justify-content: space-between;
+    margin-right: 1rem;
+    z-index: 10;
+}
+
+.menuBlock div {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-gray-dark);
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width : 1024px) {
+
+    .navCenter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        padding: 0;
+        height: 3rem;
+        margin: 0 1rem;
+        position: sticky;
+        background-color: transparent;
+    }
+
+    .searchBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e2e2e2;
+        border-radius: 20px;
+        width: 20rem;
+        padding: .4rem 1rem;
+        margin: 0 1.5rem;
+    }
+
+    .menuBlock {
+        display: none;
+    }
 }
