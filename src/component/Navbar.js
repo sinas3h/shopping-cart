@@ -10,8 +10,8 @@ import bagIcon from "../icons/bag.svg";
 
 const Navbar = () => {
   const { state } = useContext(cartContext);
-
   const [menu , setMenu] = useState(false)
+  const [ input , setInput] = useState('')
 
   return (
     <div className={style.container}>
@@ -40,6 +40,7 @@ const Navbar = () => {
         <div className={style.searchBlock} >
         <input
           className={style.searchInput}
+          onChange={e => setInput(e)}
           type="text"
           placeholder="Search Product"
           autoComplete="no"

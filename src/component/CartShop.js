@@ -23,9 +23,18 @@ const CartShop = ({ productData }) => {
   const { state, dispatch } = useContext(cartContext);
   const [ favorite , setFavorite] = useState(false)
 
+  const favoriteHandler = () => {
+    setFavorite(!favorite)
+    dispatch({type: `${!favorite ? 'FAVORITE' : 'UNFAVORITE'}` , payload: productData})
+  }
+
+  console.log(state)
+
   return (
     <div className={style.cart}>
-      <span className={style.cartFavorite} onClick={()=> dispatch({type: 'FAVORITE' , payload: productData})}><img src={heartIcon} alt="heart" /></span>
+      {!favorite ? 
+      <span className={style.cartFavorite} onClick={favoriteHandler}><img src={heartIcon} alt="heart" /></span> :
+      <span className={style.cartFavorite} onClick={favoriteHandler}><img src={heartBoldIcon} alt="heartBold" /></span>}
       <div className={style.image}>
         <img src={productData.image} alt="cart" />
       </div>
