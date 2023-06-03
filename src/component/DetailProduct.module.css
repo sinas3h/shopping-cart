@@ -1,0 +1,50 @@
+.detailBlock {
+    margin: 2rem 2rem;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 1.5rem ;
+
+}
+.image img {
+    width: 200px;
+    height: 260px;
+    margin: 30px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title h2 {
+    width: 230px;
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--color-secondary-light);
+    color: white;
+    padding: .5rem;
+    border-radius: 10px;
+    
+
+}
+
+.description {
+    color: var(--color-gray);
+    line-height: 22px;
+    font-size: 14px;
+}

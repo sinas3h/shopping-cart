@@ -7,6 +7,7 @@ import CartContextProvider from './contex/CartContextProvider';
 import MainPage from './component/MainPage';
 import Navbar from './component/Navbar';
 import ShopPage from './component/ShopPage';
+import DetailProduct from './component/DetailProduct';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Routes>
           <Route path='/shopping' element={<ShopPage />} />
           <Route path='/products' element={<MainPage />} />
+          <Route path='/products/:id' element={<DetailProduct />} />
           <Route path='/*' element={<Navigate to='./products' />} />
         </Routes>
       </CartContextProvider>
