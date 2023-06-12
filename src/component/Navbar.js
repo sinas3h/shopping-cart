@@ -14,7 +14,7 @@ const Navbar = () => {
   const [ input , setInput] = useState('')
 
   return (
-    <div className={style.container}>
+    <div className={style.container} >
       <div onClick={()=> setMenu(!menu)} className={style.menuBlock}>
         <div></div>
         <div></div>
@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link className={style.link}>Home</Link>
         </li>
         <li>
-          <Link className={style.link} to="/products">
+          <Link className={style.link} onClick={()=>{menu && setMenu(false)}} to="/products">
             products
           </Link>
         </li>

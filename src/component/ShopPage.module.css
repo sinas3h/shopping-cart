@@ -1,6 +1,5 @@
 .contentWrapper {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -34,7 +33,8 @@
 @media screen and (min-width : 1024px) {
     .content {
         flex-direction: row;
-        margin: 4rem auto;
+        margin: 4rem 12rem;
         align-items: flex-start;
+
     }
 }

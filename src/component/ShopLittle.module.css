@@ -1,12 +1,12 @@
 .container {
     margin: 1rem;
     width: 250px;
-    height: 100px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items:flex-start;
-    font-size: 16px;
+    font-size: 18px;
     background-color: var(--color-white);
     padding: 1.5rem 2rem;
     padding-left: 3rem;
@@ -26,9 +26,10 @@
 }
 
 .image img {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 80px;
     margin-right: 1rem;
+    margin-bottom: .5rem;
 }
 
 .productDetail {
@@ -78,14 +79,17 @@
 @media screen and (min-width : 1024px) {
     .container{
     width: 450px;
-    height: 150px;
+    height: 130px;
+    flex-direction: row;
+    align-items: center;
 
 
     }
 
     .image img {
         width: 100px;
-        height: 100px;
-        margin-right: 1rem;
+        height: 120px;
+        margin-right: 2rem;
+        align-items: center;
     }
 }

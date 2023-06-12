@@ -68,16 +68,20 @@
 }
 
 .mainBlockDetail {
-    margin: 0 1rem;
+    margin: 0 1.2rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow-x: auto;
+    flex-direction: row;
 }
 
+/* .mainBlockDetail h3 {
+    margin-left: .5rem;
+    font-size: 18px;
+    font-weight: 500;
+} */
+
 .mainBlockDetail button {
-    padding: .3rem .5rem;
-    margin: 0 .5rem;
+    padding: .5rem .8rem;
+    margin-right:.7rem;
     text-align: center;
     border-radius: 20px;
     border: 0;
@@ -85,7 +89,7 @@
     color: var(--color-gray-dark);
     font-family: inherit;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 16px;
     cursor: pointer;
     transition: .2s;
     display: flex;
@@ -113,10 +117,26 @@
     outline: 0;
 }
 
+.categorySort {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+    width: 100vw;
+}
+
 .category {
-    width: 55%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.sort {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .sortwrapper {
@@ -129,7 +149,7 @@
     background-color: var(--color-secondary-light);
     color: white;
     width: 13rem;
-    right: 0;
+    left: 0;
     top: 2.7rem;
     border-radius: 20px;
     z-index: 10;
@@ -167,7 +187,6 @@
     .mainBlockDetail {
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
         width: 95%;
         overflow: unset;
     }
@@ -185,9 +204,27 @@
         font-size: 60px;
     }
 
+    .categorySort {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+    }
+
     .category {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+    }
+
+    .sort {
+        margin-top: unset;
+        width: 200px;
+    }
+
+    .sortwrapperActive {
+    right: 0;
+    left: unset;
+
     }
 
     .mainBlockDetail button {

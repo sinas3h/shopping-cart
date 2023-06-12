@@ -37,16 +37,27 @@
     cursor: pointer;
 }
 
-.image img {
-    width: 150px;
-    height: 170px;
-    padding: 4rem;
-    /* box-sizing: border-box; */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 290px;
+    background-color: var(--color-white);
     border: 3px solid var(--color-gray-light);
     border-bottom: 0;
     border-radius: 30px;
-    background-color: var(--color-white);
-    align-content: center;
+}
+
+.image div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image div img {
+    width: 140px;
+    height: auto;
 }
 
 .items {
@@ -137,4 +148,16 @@
     border-radius: 8px;
     text-align: center;
     font-size: 14px;
+}
+
+@media screen and (min-width : 1024px) {
+    .image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .image div img {
+        width: 120px;
+        height: auto;
+    }
 }

@@ -45,7 +45,7 @@ const CartShop = ({ productData }) => {
         </span>
       )}
       <div className={style.image}>
-        <img src={productData.image} alt="cart" />
+        <div><img src={productData.image} alt="cart" /></div>
       </div>
       <div className={style.cartTitel}>
         <h2>{shorten(productData.title)}</h2>
