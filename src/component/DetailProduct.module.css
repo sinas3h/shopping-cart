@@ -1,5 +1,5 @@
 .detailBlock {
-    margin: 2rem 2rem;
+    margin: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -39,7 +39,7 @@
 .title p {
     font-size: 20px;
     font-weight: 600;
-    background-color: var(--color-secondary-light);
+    background-color: var(---color-primary-light);
     color: white;
     padding: .5rem;
     border-radius: 10px;
@@ -86,9 +86,9 @@
 
 .addItem {
     border: 0;
-    background-color: var(--color-secondary-light);
+    background-color: var(---color-primary-light);
     color: var(--color-white);
-    border: 2px solid var(--color-secondary-light);
+    border: 2px solid var(---color-primary-light);
     border-radius: 20px;
     padding: .5rem 1rem;
     transition: .2s;
@@ -99,9 +99,9 @@
 }
 
 .addItem:hover {
-    color: var(--color-white);
-    border: 2px solid var(--color-secondary);
-    background-color: var(--color-secondary);
+    color: white;
+    border: 2px solid var(---color-primary);
+    background-color: var(---color-primary);
 }
 
 .btn {
@@ -125,7 +125,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-secondary-light);
+    background-color: var(--color-primary-light);
     color: white;
     border-radius: 8px;
     text-align: center;
@@ -193,6 +193,7 @@
 
 @media screen and (min-width : 1280px) {
     .detailBlock {
-        margin: 5rem 15rem;
+        margin: 5rem auto;
+        max-width: 1200px;
     }
 }

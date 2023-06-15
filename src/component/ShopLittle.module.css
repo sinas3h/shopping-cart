@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items:flex-start;
     font-size: 18px;
-    background-color: var(--color-white);
+    background-color: white;
     padding: 1.5rem 2rem;
     padding-left: 3rem;
     border-radius: 20px;
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary-light);
     color: white;
     font-size: 13px;
     border-radius: 8px;

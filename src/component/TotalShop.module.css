@@ -13,14 +13,14 @@
 }
 
 .container h2 span {
-    color : var(--color-secondary);
+    color : var(--color-primary);
     font-weight: 600;
 }
 
 .btn {
     border: 0;
-    background-color: var(--color-secondary-light);
-    color : var(--color-white) ;
+    background-color: var(--color-primary-light);
+    color :white ;
     border-radius: 20px;
     padding: .3rem .8rem;
     transition: .2s;
@@ -32,12 +32,12 @@
 
 .btnClear {
     background-color: var(--color-gray);
-    color: var(--color-white);
+    color: white;
     margin-right: 1rem;
 }
 
 .btn:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 .btnClear:hover {

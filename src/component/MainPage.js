@@ -16,7 +16,6 @@ const MainPage = () => {
 
   const [sortTitle, setSortTitle] = useState("default sorting");
 
-
   useEffect(() => {
     setFilterProducts(products);
   }, [products]);
@@ -60,10 +59,14 @@ const MainPage = () => {
   };
 
   const defaultHandler = () => {
-    const sortDefault = filterProducts.sort()
-    setFilterProducts(sortDefault)
-    setSortTitle("default sorting")
-  }
+    const sortDefault = filterProducts.sort(function (a, b) {
+      if (a.id > b.id) return 1;
+      if (a.id < b.id) return -1;
+      return 0;
+    });
+    setFilterProducts(sortDefault);
+    setSortTitle("default sort");
+  };
 
   const azHandler = () => {
     const sortAZ = filterProducts.sort(function (a, b) {
@@ -72,8 +75,7 @@ const MainPage = () => {
       return 0;
     });
     setFilterProducts(sortAZ);
-    setSortTitle("A to Z")
-
+    setSortTitle("A to Z");
   };
 
   const zaHandler = () => {
@@ -83,8 +85,7 @@ const MainPage = () => {
       return 0;
     });
     setFilterProducts(sortZA);
-    setSortTitle("Z to A")
-
+    setSortTitle("Z to A");
   };
 
   const priceLowHandler = () => {
@@ -94,8 +95,7 @@ const MainPage = () => {
       return 0;
     });
     setFilterProducts(sortPriceLow);
-    setSortTitle("low to high")
-
+    setSortTitle("low to high");
   };
 
   const priceHighHandler = () => {
@@ -105,7 +105,7 @@ const MainPage = () => {
       return 0;
     });
     setFilterProducts(sortPriceHigh);
-    setSortTitle("high to low")
+    setSortTitle("high to low");
   };
 
   console.log(filterProducts);
@@ -131,6 +131,8 @@ const MainPage = () => {
             <button onClick={jeweleryHandler}>jewelery</button>
             <button onClick={electronicsHandler}>electronics</button>
             <button onClick={womensHandler}>women's clothing</button>
+            <div className={style.fadeLeft}></div>
+            <div className={style.fadeRight}></div>
           </div>
 
           <div className={style.sort}>
@@ -158,7 +160,7 @@ const MainPage = () => {
                 }
               >
                 <ul>
-                  <li onClick={defaultHandler}>default sorting</li>
+                  <li onClick={defaultHandler}>default sort</li>
                   <li onClick={azHandler}>Name: A to Z</li>
                   <li onClick={zaHandler}>Name: Z to A</li>
                   <li onClick={priceLowHandler}>sort by price : low to high</li>

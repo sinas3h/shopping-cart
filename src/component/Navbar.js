@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className={style.container} >
-      <div onClick={()=> setMenu(!menu)} className={style.menuBlock}>
+      <div onClick={()=> setMenu(!menu)} className={!menu ? style.menuBlock : style.menuClose}>
         <div></div>
         <div></div>
         <div></div>
