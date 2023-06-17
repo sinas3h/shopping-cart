@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 //css
 import style from "./TotalShop.module.css";
 
@@ -23,12 +24,15 @@ const TotalShop = (props, { productData }) => {
         >
           Clear
         </button>
+        
+        <Link to="/signup">
         <button
           className={style.btn}
           onClick={() => dispatch({ type: "CHECK_OUT", payload: productData })}
         >
           Check Out
         </button>
+        </Link>
       </div>
     </div>
   );

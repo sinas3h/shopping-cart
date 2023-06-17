@@ -23,7 +23,7 @@
     background-color: white;
     width: 15rem;
     height: 15rem;
-    padding: 4rem 0 2rem 1.5rem;
+    padding: 5rem 0 2rem 2rem;
     position: absolute;
     left: -120%;
     top: 0;
@@ -74,7 +74,7 @@
 }
 
 .searchBlock span {
-    width: 20px;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -99,24 +99,45 @@
     }
 }
 
+.profileUser {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-gray-dark);
+}
+
+.profileUser span {
+    margin-left: .5rem;
+}
+
 .shoppingBag {
     text-align: center;
     transition: .2s;
     border: 0;
+    position: relative;
 }
 
 .shoppingBag :nth-child(1) {
     text-decoration: none;
     transition: .2s;
-    width: 30px;
+    width: 35px;
 }
 
 .shoppingBag :nth-child(2) {
     position: absolute;
-    font-size: 20px;
-    color: var(--color-primary);
+    font-size: 16px;
+    color: white;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-primary-light);
     border-radius: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5px;
+    right: -.8rem;
 }
 
 .menuBlock {
@@ -230,5 +251,16 @@
 
     .menuBlock {
         display: none;
+    }
+
+    .profileUser {
+        margin-left: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileUser img {
+        width: 30px;
     }
 }

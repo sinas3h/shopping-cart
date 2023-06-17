@@ -8,6 +8,8 @@ import MainPage from "./component/MainPage";
 import Navbar from "./component/Navbar";
 import ShopPage from "./component/ShopPage";
 import DetailProduct from "./component/DetailProduct";
+import SignupPage from "./component/SignupPage";
+import Account from "./component/Account";
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
       <CartContextProvider>
         <Navbar />
         <Routes>
+          <Route path="/account" element={<Account />} />
           <Route path="/shopping" element={<ShopPage />} />
           <Route path="/products" element={<MainPage />} />
           <Route path="/products/:id" element={<DetailProduct />} />

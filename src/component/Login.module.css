@@ -1,0 +1,77 @@
+
+.signupForm {
+    margin: 0 auto;
+}
+.signupForm form {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signupForm form div {
+    position: relative;
+}
+
+.signupForm label {
+    position: absolute;
+    background-color: var(--color-gray-light);
+    padding: 0 7px;
+    left: .8rem;
+    top:-7px;
+    font-size: 13px;
+    color: var(--color-gray);
+}
+
+.signupForm input {
+    width: 280px;
+    height: 2.3rem;
+    border-radius: 10px;
+    border: solid 1px var(--color-gray) ;
+    background-color: var(--color-gray-light);
+    outline: none;
+    font-size: 18px;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.signupForm span {
+    position: absolute;
+    font-size: 11px;
+    color: rgb(249, 79, 79);
+    left: 0;
+    bottom: 1rem;
+}
+
+.signupForm button {
+    width: 300px;
+    padding: .7rem 2rem; 
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background-color: var(--color-primary-light);
+}
+
+.changeForm {
+    margin-top: 1rem;
+    display: flex;
+    color: var(--color-gray-dark);
+    font-size: 14px;
+}
+
+.changeForm :nth-child(2) {
+    margin-left: .5rem;
+    color: var(--color-primary-light);
+    cursor: pointer;
+}
+
+@media screen and (min-width : 780px) {
+    .signupForm form {
+        margin: 0 2rem;
+    }
+}
