@@ -33,7 +33,15 @@ const Navbar = () => {
         }
       >
         <li>
-          <Link className={style.link}>Home</Link>
+        <Link
+            className={style.link}
+            onClick={() => {
+              menu && setMenu(false);
+            }}
+            to="/home"
+          >
+            Home
+          </Link>
         </li>
         <li>
           <Link

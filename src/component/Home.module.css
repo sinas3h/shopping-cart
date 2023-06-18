@@ -1,0 +1,126 @@
+
+
+.topMainDiv {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 0 10rem;
+    max-width: 1300px;
+    height: 80vh;
+    margin: 1rem auto 2rem auto;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-primary-light);
+    border-radius: 20px;
+}
+
+.topMainBlockDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.topMainBlockDetail div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.topMainBlockDetail P {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: var(--color-gray-dark);
+    font-weight: 600;
+    position: relative;
+
+}
+
+.topMainBlockDetail h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
+.viewProducts {
+    margin-top:2rem ;
+    background-color: var(--color-primary-dark);
+    padding: 1.2rem 1.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    transition: .2s;
+    outline: 0px solid var(--color-primary);
+    cursor: pointer;
+}
+
+.viewProducts:hover {
+    outline: 8px solid var(--color-primary);
+    outline-offset: 4px;
+    /* transition: .2s; */
+    /* background-color: var(--color-primary); */
+
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.homeImage {
+    width: 300px;
+}
+
+@media screen and (min-width : 780px) {
+    .topMainBlockDetail h2 {
+        font-size: 60px;
+    }
+
+    .topMainBlockDetail P {
+        font-size: 20px;
+    }
+
+    .homeImage {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width : 1024px) {
+    .topMainDiv {
+    flex-direction:row;
+
+    }
+
+    .topMainBlockDetail {
+        margin-right: 2rem;
+    }
+
+    .topMainBlockDetail h2 {
+        font-size: 80px;
+    }
+
+    .topMainBlockDetail P {
+        font-size: 26px;
+    }
+
+    .topMainBlockDetail {
+        align-items: flex-start;
+    }
+
+    .viewProducts {
+        font-size: 24px;
+    }
+
+    .homeImage {
+        width: 400px;
+    }
+
+}

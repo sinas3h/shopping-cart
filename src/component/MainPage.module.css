@@ -46,7 +46,7 @@
     padding: 0 1rem;
     max-width: 1300px;
     height: 150px;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem auto 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@
 }
 
 .mainBlockDetail button:focus {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
     color: white;
     border: 0;
     outline: 0;

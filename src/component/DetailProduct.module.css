@@ -39,7 +39,7 @@
 .title p {
     font-size: 20px;
     font-weight: 600;
-    background-color: var(---color-primary-light);
+    background-color: var(--color-primary);
     color: white;
     padding: .5rem;
     border-radius: 10px;
@@ -86,9 +86,8 @@
 
 .addItem {
     border: 0;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
     color: white;
-    border: 2px solid var(--color-primary-light);
     border-radius: 20px;
     padding: .5rem 1rem;
     transition: .2s;
@@ -100,8 +99,7 @@
 
 .addItem:hover {
     color: white;
-    border: 2px solid var(--color-primary);
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 
 .btn {

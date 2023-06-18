@@ -108,7 +108,6 @@ const MainPage = () => {
     setSortTitle("high to low");
   };
 
-  console.log(filterProducts);
 
   return (
     <div className={style.mainWrapper}>

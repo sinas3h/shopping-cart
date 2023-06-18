@@ -43,8 +43,11 @@ table {
 }
 
 :root {
-	--color-primary : #0155b6;;
-	--color-primary-light : #016DE9;
+	/* --color-primary : #0155b6; */
+	--color-primary : #2F89FC;
+	--color-primary-dark : #176cdb;
+	/* --color-primary-light : #016DE9; */
+	--color-primary-light : #559dfc;
 	--color-gray-light : #F2F2F2;
 	--color-gray-dark : #1f1f1f;
 	--color-gray : #858585;
@@ -54,8 +57,9 @@ table {
 body {
 	background-color: var(--color-gray-light);
 	font-family: 'Noto Sans Oriya', sans-serif;
-	min-height: 110vh;
+	/* min-height: 110vh; */
 	max-width: 2000px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
+	overflow-y: scroll;
   }
 

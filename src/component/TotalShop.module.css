@@ -19,7 +19,7 @@
 
 .btn {
     border: 0;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
     color :white ;
     border-radius: 20px;
     padding: .3rem .8rem;
@@ -37,7 +37,7 @@
 }
 
 .btn:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 
 .btnClear:hover {
