@@ -104,7 +104,7 @@
     }
 
     .topMainBlockDetail h2 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .topMainBlockDetail P {
@@ -120,7 +120,17 @@
     }
 
     .homeImage {
-        width: 400px;
+        width: 350px;
     }
 
+}
+
+@media screen and (min-width : 1280px) {
+    .topMainBlockDetail h2 {
+        font-size: 80px;
+    }
+    
+    .homeImage {
+        width: 400px;
+    }
 }
