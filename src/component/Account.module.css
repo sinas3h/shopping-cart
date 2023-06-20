@@ -25,6 +25,7 @@
         width: 50%;
         height: 560px;
         border-radius: 15px;
+        transition: .2s;
     }
 }
 

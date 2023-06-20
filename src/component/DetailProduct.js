@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import style from "./DetailProduct.module.css";
 import { useParams } from "react-router-dom";
-import { ProductContext } from "../contex/ProductsContextProvider";
 import { useContext } from "react";
 import { quantityCount } from "../helper/function";
 import { isInCart } from "../helper/function";
@@ -15,13 +15,33 @@ import removeIcon from "../icons/trash.svg";
 const DetailProduct = (props) => {
   const { state, dispatch } = useContext(cartContext);
 
+  const [product, setProduct] = useState([]);
+
   const params = useParams();
   const id = params.id;
-  const data = useContext(ProductContext);
-  const product = data[id - 1];
+
+  const getProducts = async () => {
+    const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
+    return response.data;
+  };
+
+  useEffect(() => {
+    const fetchAPI = async () => {
+      setProduct(await getProducts());
+    };
+
+    fetchAPI();
+  }, []);
+
+  console.log(product);
+
+  
+
   return (
     <div>
-      <div className={style.detailBlock}>
+      {product.length===0 ?
+      <span className={style.loading}></span> : 
+        <div className={style.detailBlock}>
         <div className={style.image}>
           <img src={product.image} alt="product" />
         </div>
@@ -83,6 +103,7 @@ const DetailProduct = (props) => {
           </div>
         </div>
       </div>
+      }
     </div>
   );
 };

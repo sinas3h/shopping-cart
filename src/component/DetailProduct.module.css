@@ -130,6 +130,28 @@
     font-size: 22px;
 }
 
+.loading {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    border: 3px solid var(--color-primary-light);
+    border-bottom-color: var(--color-gray-dark);
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: loading 1s linear infinite;
+    margin: 8rem auto;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (min-width : 1024px) {
     .image {
         margin-right: 1.5rem;
